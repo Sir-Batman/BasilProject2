@@ -6,3 +6,9 @@ function initMap(){
 });
 }
 google.maps.event.addDomListener(window, 'load', initMap);
+if (navigator.geolocation) {
+	navigator.geolocation.getCurrentPosition(function (position) {
+		initialLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+		map.setCenter(initialLocation);
+	});
+}
