@@ -1,7 +1,7 @@
 ##Team Basil 361 Project
 This is the repository for Team Basil's CS 361 implementation project.
 
-The website can be found at [basil.andrewtolvstad.com](basil.andrewtolvstad.com).
+The website can be found at [basil.andrewtolvstad.com](http://basil.andrewtolvstad.com).
 The server is configured to pull from the master branch of this repository every 5 minutes, so any changes can be viewed in near real time.
 
 The project was implemented with Agile/XP as the development method.
