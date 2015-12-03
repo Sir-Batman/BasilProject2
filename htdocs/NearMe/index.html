@@ -10,6 +10,7 @@
 		<!-- Custom styles for this template -->
 		<link href="../main_design.css" rel="stylesheet">
 
+		<link href="./location.css" rel="stylesheet">
 		<title>Indirect Help Sources</title>
 	</head>
 
@@ -21,7 +22,11 @@
 	    <script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 
 		<!-- custom page js -->
-		<script src="./indirect.js"></script>
+		<!-- <script src="./indirect.js"></script> -->
+		<script 
+			src="https://maps.googleapis.com/maps/api/js">
+		</script>
+		<script src="./mapcontrol.js"></script>
 	
 		<!-- navbar section -->
 		<div class="navbar navbar-default" role="navigation">
@@ -41,9 +46,9 @@
 	
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Indirect Help</a></li>
+						<li><a href="../indirect">Indirect Help</a></li>
 						<li><a href="#">Direct Help</a></li>
-						<li><a href="../NearMe">Help Near Me</a></li>
+						<li class="active"><a href="#">Help Near Me</a></li>
 					</ul>
 	
 					<ul class="nav navbar-nav navbar-right">
@@ -56,13 +61,10 @@
 		
 		<!-- Begin Body Content -->
 		<div class="container">
-			<h2>Summary of indirect help methods available near you</h2>
-			<table id="information"></table>
+			<h2>Methods Near Your Location</h2>
+			<div id="map"></div>
 		</div>
 			
-		
-
-	
 		<div id="footer">
 			<div class="container">
 				<p class="text-muted">
