@@ -64,4 +64,6 @@ body {
 	filter: alpha(opacity: 100);
 }
 
-
+table td {
+	padding: 5px 20px;
+}
