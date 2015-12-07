@@ -3,23 +3,25 @@
 	<head>
 		<meta charset="utf-8">
 		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="./bootstrap-3.3.5-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css">
 		<!-- Mobile scaling friendly -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Custom styles for this template -->
-		<link href="./main_design.css" rel="stylesheet">
+		<link href="../main_design.css" rel="stylesheet">
 
-		<title>LGBTQ Resources</title>
+		<title>Indirect Help Sources</title>
 	</head>
 
 	<body>
 
 	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	    <script src="./jquery-1.11.3.min.js"></script>
+	    <script src="../jquery-1.11.3.min.js"></script>
 	    <!-- Include all compiled plugins (below), or include individual files as needed -->
-	    <script src="./bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	    <script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 
+		<!-- custom page js -->
+		<script src="./indirect.js"></script>
 	
 		<!-- navbar section -->
 		<div class="navbar navbar-default" role="navigation">
@@ -34,15 +36,14 @@
 						<span class="icon-bar"></span>
 					</button>
 
-					<a class="navbar-brand" href="./index.html">LGBTQ Help</a>
+					<a class="navbar-brand" href="../">LGBTQ Help</a>
 				</div>
 	
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="/indirect">Indirect Help</a></li>
-						<li><a href="#">Direct Help</a></li>
-						<li><a href="/therapist/submit.html">Submit Therapist Info</a></li>
-						<li><a href="NearMe">Help Near Me</a></li>
+						<li><a href="/indirect/">Indirect Help</a></li>
+						<li><a href="/direct/">Direct Help</a></li>
+						<li><a href="/#/">Submit Therapist Info</a><li>
 					</ul>
 	
 					<ul class="nav navbar-nav navbar-right">
@@ -55,12 +56,22 @@
 		
 		<!-- Begin Body Content -->
 		<div class="container">
+			<form class="form-submit" action="submit.php" method="post" style="max-width: 300px;">
+				<h2 class="form-signin-heading">Submit therapist information</h2>
+				
+				<label for="inputName" class="sr-only">Name</label>
+				<input name="name" type="text" id="inputName" class="form-control" placeholder="Name" required autofocus>
+				
+				<label for="inputUrl" class="sr-only">URL</label>
+				<input name="url" type="url" id="inputUrl" class="form-control" placeholder="Website" required>
+				
+				<label for="inputUrl" class="sr-only">URL</label>
+				<input name="phone" type="tel" id="inputPhone" class="form-control" placeholder="Phone">
+				
+				<button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+			</form>
 
 		</div>
-			
-		
-
-	
 		<div id="footer">
 			<div class="container">
 				<p class="text-muted">
