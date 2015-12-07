@@ -56,13 +56,22 @@
 		
 		<!-- Begin Body Content -->
 		<div class="container">
-			<h2>Submit Therapist Information</h2>
+			<form class="form-submit" action="submit.php" method="post" style="max-width: 300px;">
+				<h2 class="form-signin-heading">Submit therapist information</h2>
+				
+				<label for="inputName" class="sr-only">Name</label>
+				<input name="name" type="text" id="inputName" class="form-control" placeholder="Name" required autofocus>
+				
+				<label for="inputUrl" class="sr-only">URL</label>
+				<input name="url" type="url" id="inputUrl" class="form-control" placeholder="Website" required>
+				
+				<label for="inputUrl" class="sr-only">URL</label>
+				<input name="phone" type="tel" id="inputPhone" class="form-control" placeholder="Phone">
+				
+				<button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+			</form>
 
 		</div>
-			
-		
-
-	
 		<div id="footer">
 			<div class="container">
 				<p class="text-muted">
