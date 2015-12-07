@@ -3,23 +3,30 @@
 	<head>
 		<meta charset="utf-8">
 		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="./bootstrap-3.3.5-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css">
 		<!-- Mobile scaling friendly -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Custom styles for this template -->
-		<link href="./main_design.css" rel="stylesheet">
+		<link href="../main_design.css" rel="stylesheet">
 
-		<title>LGBTQ Resources</title>
+		<link href="./location.css" rel="stylesheet">
+		<title>Indirect Help Sources</title>
 	</head>
 
 	<body>
 
 	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	    <script src="./jquery-1.11.3.min.js"></script>
+	    <script src="../jquery-1.11.3.min.js"></script>
 	    <!-- Include all compiled plugins (below), or include individual files as needed -->
-	    <script src="./bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	    <script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 
+		<!-- custom page js -->
+		<!-- <script src="./indirect.js"></script> -->
+		<script 
+			src="https://maps.googleapis.com/maps/api/js">
+		</script>
+		<script src="./mapcontrol.js"></script>
 	
 		<!-- navbar section -->
 		<div class="navbar navbar-default" role="navigation">
@@ -34,15 +41,14 @@
 						<span class="icon-bar"></span>
 					</button>
 
-					<a class="navbar-brand" href="./index.html">LGBTQ Help</a>
+					<a class="navbar-brand" href="../">LGBTQ Help</a>
 				</div>
 	
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="/indirect">Indirect Help</a></li>
+						<li><a href="../indirect">Indirect Help</a></li>
 						<li><a href="#">Direct Help</a></li>
-						<li><a href="/therapist/submit.html">Submit Therapist Info</a></li>
-						<li><a href="NearMe">Help Near Me</a></li>
+						<li class="active"><a href="#">Help Near Me</a></li>
 					</ul>
 	
 					<ul class="nav navbar-nav navbar-right">
@@ -55,12 +61,10 @@
 		
 		<!-- Begin Body Content -->
 		<div class="container">
-
+			<h2>Methods Near Your Location</h2>
+			<div id="map"></div>
 		</div>
 			
-		
-
-	
 		<div id="footer">
 			<div class="container">
 				<p class="text-muted">
